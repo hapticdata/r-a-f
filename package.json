@@ -1,0 +1,11 @@
+{
+  "name": "r-a-f",
+  "version": "0.1.0",
+  "description": "simple polyfill for requestAnimationFrame for browser and node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Phillips",
+  "license": "MIT"
+}
