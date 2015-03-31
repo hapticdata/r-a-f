@@ -17,7 +17,7 @@
     if (!global.requestAnimationFrame){
         global.requestAnimationFrame = function(callback, element) {
             var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var timeToCall = Math.max(0, Math.round(16.666 - (currTime - lastTime)));
             var id = setTimeout(function() { callback(currTime + timeToCall); }, timeToCall);
             lastTime = currTime + timeToCall;
             return id;
@@ -34,15 +34,13 @@
 
     //if this is Node, AMD, Browserify, export the module
     function attach(){
-        var exports;
-        exports = global.requestAnimationFrame;
-        exports.request = global.requestAnimationFrame;
-        exports.cancel  = global.cancelAnimationFrame;
+        var exports = global.requestAnimationFrame;
+        exports.cancel = global.cancelAnimationFrame;
         return exports;
     }
 
-    if( typeof define !== 'undefined' && define.amd ){
-        define(attach());
+    if( typeof define == 'function' && define.amd ){
+        define(attach);
     } else if( typeof module !== 'undefined' ){
         module.exports = attach();
     }

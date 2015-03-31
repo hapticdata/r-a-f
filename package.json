@@ -2,10 +2,21 @@
   "name": "r-a-f",
   "version": "0.1.0",
   "description": "simple polyfill for requestAnimationFrame for browser and node",
-  "main": "index.js",
+  "main": "r-a-f.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
-  "author": "Kyle Phillips",
-  "license": "MIT"
+  "author": "Kyle Phillips <kyle@haptic-data.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hapticdata/r-a-f.git"
+  },
+  "keywords": [
+    "requestAnimationFrame",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^3.5.0"
+  }
 }
