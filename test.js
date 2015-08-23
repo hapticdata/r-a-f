@@ -3,7 +3,7 @@
  * https://github.com/chrisdickinson/raf/blob/master/test.js
  */
 var test = require('tape'),
-    raf  = require('./index.js');
+    raf  = require('./r-a-f.js');
 
 
 test('continues to emit events', function(t) {

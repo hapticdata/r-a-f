@@ -22,7 +22,7 @@ rAF.cancel(rAFID);
 
 ## Why this one
 
-I made another `requestAnimationFrame` polyfill because I wanted one module that worked in AMD, Node and Browserify and called the native function directly (when available) instead of wrapping it.
+I made another `requestAnimationFrame` polyfill because the best one I found on NPM used `requestAnimationFrame.call` and I prefer to avoid that overhead. I wanted one module that worked in AMD and Node including Browserify and called the native function directly (when available) instead of wrapping it.
 
 
 **MIT License**

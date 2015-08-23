@@ -1,6 +1,6 @@
 {
   "name": "r-a-f",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "simple polyfill for requestAnimationFrame for browser and node",
   "main": "r-a-f.js",
   "scripts": {
